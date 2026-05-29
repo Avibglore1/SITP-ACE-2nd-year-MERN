@@ -49,14 +49,24 @@ a tag->link redirected to same page, different page
 
 why boilerplate? explain each meta elements.
 why div?
+<h1>SITP26</h1>
+   <p>Arya College of Enginnering & IT</p>
+   <a 
+   href="https://admissions.aryacollege.org/?utm_source=bing&utm_medium=intuito&utm_campaign=bing_call&utm_term=arya_admission&msclkid=83cad8e5e115153a2b0db2fcda3b4f3e"
+   style="display: block;"
+   target="_blank"
+   >Link to college</a>
+
 class and id-> write some code
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non explicabo nesciunt vel consectetur officia ipsa.</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+<h2>Honey boney walk talk</h2>
+<p>Hello</p>
+class-> grouping element;
+id-> only unique element;
+
+give example of w3school for semantic
 semantics tags
 
-same level AND INSIDE : ./ I WILL GET ALL PARALLEL FILES/FOLDERS
 
-outside file access krni hain: ../
-
-
-absolute file path
-reference file path
 
