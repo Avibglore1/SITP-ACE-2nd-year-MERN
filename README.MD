@@ -68,5 +68,14 @@ id-> only unique element;
 give example of w3school for semantic
 semantics tags
 
+HTML Forms
+
+http://127.0.0.1:3000/HTML%20Forms/index.html?ufname=&lname=&udob=&gender=male
+
+<button>Click</button>
+automatically defaults to button type="submit"
+but if we dont want this behaviour then
+button type="button"
+
 
 
