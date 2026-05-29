@@ -28,4 +28,35 @@ Cmd + / -> in mac
 
 
 a tag->link redirected to same page, different page
-attributes
+
+
+<table>
+    <thead>
+        <tr>
+        <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr></tr>
+        <tr></tr>
+    </tbody>
+    <tfoot>
+        <tr></tr>
+    </tfoot>
+</table>
+
+<!------------------------------------->
+
+why boilerplate? explain each meta elements.
+why div?
+class and id-> write some code
+semantics tags
+
+same level AND INSIDE : ./ I WILL GET ALL PARALLEL FILES/FOLDERS
+
+outside file access krni hain: ../
+
+
+absolute file path
+reference file path
+
