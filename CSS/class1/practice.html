@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Practice</title>
+
+    <style>
+        /* Add your CSS here */
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        
+
+        .box1 {
+            background-color: lightcoral;
+           border:  solid gray 8px;
+            padding: 10px 8px 4px 3px;
+            height: 100px;
+            width: 200px;
+            box-sizing: border-box;
+        }
+
+        .box2 {
+            background-color: lightblue;
+        }
+
+        .box3 {
+            background-color: lightgreen;
+        }
+
+        .span{
+            background-color:brown;
+            height: 100px;
+            width: 200px;
+            display: block;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+
+    <h1>CSS Box Model Practice</h1>
+
+        <div class="box1">
+            <h2>Box 1</h2>
+            <p>This is the first box.
+                jnfjnefn
+                ajk fkaj 
+            </p>
+        </div>
+
+        <div class="box2">
+            <h2>Box 2</h2>
+            <p>This is the <span class="span">second</span> box.</p>
+        </div>
+
+        <div class="box3">
+            <h2>Box 3</h2>
+            <p>This is the third box.</p>
+        </div>
+    
+
+   
+        <h2>Practice Card</h2>
+        <p>
+            Try adding padding, borders, margins, width, height,
+            and different box-sizing values to this card.
+        </p>
+
+</body>
+</html>
