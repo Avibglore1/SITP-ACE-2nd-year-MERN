@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .container {
+            background-color: white;
+            height: 100px;
+            width: 200px;
+            position: relative;
+            
+        }
+        .square{
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            background-color: red;
+            position: absolute;
+            left: 75px;
+            top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="square"></div>
+    </div>
+</body>
+</html>
