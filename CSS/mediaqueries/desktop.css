@@ -1,0 +1,25 @@
+
+/*  Desktop first approach  */
+
+.container{
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+@media screen and (max-width:800px) {
+   .container{
+    background-color: yellow;
+   }
+}
+
+
+@media screen and (max-width:600px) {
+    .container{
+        background-color: chocolate;
+    }
+}
+
+
+
+
+
