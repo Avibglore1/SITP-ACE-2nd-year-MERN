@@ -1,5 +1,5 @@
 Download vs code
-Add extension Live Server and Prettier
+Add extension Live Server,Prettier, live preview
 
 
 even without mentioning any tags whatever we write is going to be rendered in browser, but the issue will be everything will be on a single line 
