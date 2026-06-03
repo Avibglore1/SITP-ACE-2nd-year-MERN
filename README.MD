@@ -13,8 +13,6 @@ Address (required, minimum length)
 Course Selection (required)
 Password (required, minimum 8 characters with uppercase, lowercase, number, and special character)
 
-for error display to user, we need title tag in case of form validation
-
 ->Semantic HTML-> header, nav, main, section, article, aside, footer
 
 ->Media Tags(img,audio,video)

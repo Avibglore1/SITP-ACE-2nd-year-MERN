@@ -12,19 +12,41 @@
         <p>Please fill out the form to register</p>
         <hr>
         <h2>Personal Details</h2>
+        <!--First name-->
         <label for="fname">First Name:</label>
-        <input type="text" name="ufname" id="fname" placeholder="e.g., Arjun">
+        <input 
+        type="text" 
+        name="ufname"
+        id="fname" 
+        placeholder="e.g., Arjun" 
+        pattern="[A-Za-z]+" 
+        title="First name should contain letters only"
+         required>
         <br><br>
+        <!--last name-->
         <label for="lname">Last Name:</label>
-        <input type="text" name="lname" id="lname" placeholder="e.g., Kumar">
+        <input 
+        type="text" 
+        name="lname" 
+        id="lname" 
+        placeholder="e.g., Kumar"
+        pattern="[A-Za-z]+"
+        title="Last name should contain letters only"
+        required
+        >
         <br><br>
         <!--DOB-->
         <label for="dob">Date of Birth:</label>
-        <input type="date" name="udob" id="dob">
+        <input 
+        type="date" 
+        name="udob" 
+        id="dob"
+        required
+        >
         <br><br>
         <p>Gender:</p>
         <!--Radio Btn-->
-        <input type="radio" name="gender" id="male" value="male">
+        <input type="radio" name="gender" id="male" value="male" required>
         <label for="male">Male</label><br>
         <input type="radio" name="gender" id="female" value="female">
         <label for="female">Female</label><br>
@@ -38,16 +60,28 @@
         <input type="email" name="email" id="email" placeholder="you@example.com" required>
         <br><br>
         <label for="phone">Phone Number:</label>
-        <input type="tel" name="phone" id="phone" placeholder="e.g.,9876543210">
+        <input 
+        type="tel" 
+        name="phone" 
+        id="phone" 
+        placeholder="e.g.,9876543210"
+        pattern="[0-9]{10}"
+        title="Phone number must contain exactly 10 digits"
+        required
+        >
         <br><br>
         <label for="address">Mailing Address:</label><br>
-        <textarea name="userAddress" id="address" rows="10"
-        placeholder="Street,Address,City,State,Zip Code"></textarea>
+        <textarea 
+        name="userAddress" 
+        id="address" 
+        rows="10"
+        placeholder="Street,Address,City,State,Zip Code"
+        minlength="10"></textarea>
         <hr>
         <h2>Academic Information</h2>
         <p>Select Your Course:</p>
         <label for="course">Select a course to choose</label><br>
-        <select name="course" id="course">
+        <select name="course" id="course" required>
             <option value="CSE">CSE</option>
             <option value="EEE">EEE</option>
             <option value="ME">ME</option>
@@ -64,7 +98,14 @@
         <hr>
         <h3>Create Your Account</h3>
         <label for="paas">Create a Password:</label>
-        <input type="password" name="upass" id="paas"><br><br>
+        <input 
+        type="password" 
+        name="upass" 
+        id="paas"
+        minlength="8"
+        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$"
+        title="Password must be at least 8 characters and include uppercase, lowercase, number, and special character"
+        required><br><br>
         <hr>
         
         <button type="submit">Register</button>
