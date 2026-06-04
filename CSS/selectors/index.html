@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        /* Descendant combinator*/
+        div p{
+            color: red
+        }       
+        /*Child combinator*/
+       div>p{
+            color:aquamarine
+        }
+        /* Pseudo selectors*/
+        button:hover{
+            background-color:bisque
+        }
+
+        input:focus{
+            border: 2px solid greenyellow;
+        }
+
+        li:first-child{
+            background-color: aquamarine;
+        }
+
+        li:last-child{
+            background-color: bisque;
+        }
+
+        li:nth-child(2){
+            background-color: blueviolet;
+        }
+        input:checked{
+            accent-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+       <button>Submit</button><br><br>
+       <label for="name">Name</label>
+       <input type="text" name="" id="name"><br><br>
+        <ul>
+            <li>India</li>
+            <li>England</li>
+            <li>USA</li>
+        </ul>
+        <label for="">C++</label>
+        <input type="checkbox" name="" id="">
+        <label for="">java</label>
+        <input type="checkbox" name="" id="">
+    </div>
+   
+</body>
+</html>

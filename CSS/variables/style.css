@@ -1,0 +1,38 @@
+:root{
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --background-color: #f4f4f4;
+    --card-color: white;
+
+    --font-large: 28px;
+    --font-medium: 18px;
+    --font-small: 14px;
+
+    --spacing: 20px;
+    --radius: 10px;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+.card{
+    background-color: var(--card-color);
+    padding: var(--spacing);
+    border-radius: var(--radius);
+}
+
+button{
+    background-color: var(--primary-color);
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+.dark-theme{
+    --primary-color: #f39c12;
+    --secondary-color: white;
+    --background-color: #1e1e1e;
+    --card-color: #333;
+}

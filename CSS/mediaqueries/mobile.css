@@ -1,4 +1,4 @@
-.sun{
+/* .sun{
     height: 200px;
     width: 200px;
     background-color: yellow;
@@ -12,16 +12,17 @@ body{
     align-items: center;
     height: 100vh;
     background-color: azure;
-}
+} */
 
 
 
-/* 
-mobile first approach:
+
+/* mobile first approach: */
 
 
 .container {
     background-color: chocolate;
+    height: 100vh;
 }
 
 @media (min-width: 601px) {
@@ -37,7 +38,6 @@ mobile first approach:
 }
 
 
-*/
 
 
 
