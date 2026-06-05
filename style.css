@@ -1,0 +1,34 @@
+/* combinators */
+
+/* descendant */
+div p{
+    color: yellowgreen;
+    font-size: large;
+}
+
+div>p{
+    color: rgb(94, 50, 205);
+    font-size: small;
+}
+
+/* pseudo selectors */
+/* p:hover{
+    color:brown;
+    background-color: yellowgreen;
+}
+
+li:first-child{
+    color: red;
+}
+
+li:last-child{
+    color:blue;
+}
+
+li:nth-child(2){
+    color:bisque
+} */
+
+
+
+
