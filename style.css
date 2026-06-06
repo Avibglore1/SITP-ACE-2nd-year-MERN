@@ -1,33 +1,19 @@
-/* combinators */
 
-/* descendant */
-div p{
-    color: yellowgreen;
-    font-size: large;
+body{
+    font-size: 20px;
 }
 
-div>p{
-    color: rgb(94, 50, 205);
-    font-size: small;
+
+html{
+  font-size: 26px;  
 }
 
-/* pseudo selectors */
-/* p:hover{
-    color:brown;
-    background-color: yellowgreen;
-}
 
-li:first-child{
-    color: red;
+p{
+    
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-li:last-child{
-    color:blue;
-}
-
-li:nth-child(2){
-    color:bisque
-} */
 
 
 

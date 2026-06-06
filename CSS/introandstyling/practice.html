@@ -3,75 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box Model Practice</title>
-
-    <style>
-        /* Add your CSS here */
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>FLEXBOX</title>
+    <style type="text/tailwindcss">
 
         *{
-            margin: 0;
             padding: 0;
+            margin: 0;
+        }
+        div{
+            
+            background-color: aquamarine;
+            display: flex;
+            
         }
 
-        
-
-        .box1 {
-            background-color: lightcoral;
-           border:  solid gray 8px;
-            padding: 10px 8px 4px 3px;
+        section{
             height: 100px;
-            width: 200px;
-            box-sizing: border-box;
+            width: 100px;
+            background-color: brown;
+            margin: 8px;
         }
 
-        .box2 {
-            background-color: lightblue;
+        .box2{
+            
+            flex-shrink: 2;
         }
 
-        .box3 {
-            background-color: lightgreen;
+        .box3{
+            flex-basis: 1;
         }
 
-        .span{
-            background-color:brown;
-            height: 100px;
-            width: 200px;
-            display: block;
-        }
-
-        
-        
     </style>
 </head>
 <body>
+    <div class="p-4 text-xl h-[600px] w-[600px] ">
+        <section class="box1">Block1</section>
+        <section class="box2">Block2</section>
+        <section class="box3">Block3</section>
 
-    <h1>CSS Box Model Practice</h1>
-
-        <div class="box1">
-            <h2>Box 1</h2>
-            <p>This is the first box.
-                jnfjnefn
-                ajk fkaj 
-            </p>
-        </div>
-
-        <div class="box2">
-            <h2>Box 2</h2>
-            <p>This is the <span class="span">second</span> box.</p>
-        </div>
-
-        <div class="box3">
-            <h2>Box 3</h2>
-            <p>This is the third box.</p>
-        </div>
-    
-
-   
-        <h2>Practice Card</h2>
-        <p>
-            Try adding padding, borders, margins, width, height,
-            and different box-sizing values to this card.
-        </p>
-
+    </div>
 </body>
 </html>

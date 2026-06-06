@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning</title>
+    <style>
+        .card{
+            height: 600px;
+            width: 600px;
+            background-color: rgba(32, 32, 118, 0.841);
+            position: relative;
+        }
+
+        .small{
+            height: 250px;
+            width:200px;
+           
+        }
+
+         .large{
+            height: 250px;
+            width:300px;
+        
+        }
+
+        div div{
+            background-color: yellowgreen;
+        }
+
+        .box1{
+            position: absolute;
+            top:0px;
+            left: 0px
+        }
+
+        .box2{
+            position: absolute;
+            top:0px;
+            right: 0px
+        }
+
+        .box3{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .box4{
+            position: absolute;
+            bottom: 0px;
+            right: 0    ;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="small box1"></div>
+        <div class="large box2"></div>
+        <div class="small box3"></div>
+        <div class="large box4"></div>
+    </div>
+</body>
+</html>
