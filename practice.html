@@ -3,28 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS positioning</title>
-    <style>
-        .container{
-            background-color: aquamarine;
-            height: 500px;
-            position: relative;
-            width: 600px;
-        }
-        .circle{
-            background-color: bisque;
-            height: 200px;
-            width: 200px;
-            border-radius: 50%;
-            position: absolute;
-            top: 150px;
-           left: 200px
-        }
-    </style>
+    <title>Flexbox</title>
 </head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    .container{
+        height: 800px;
+        background-color: aquamarine;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-size: 32px;
+        
+    }
+    .card{
+        height: 150px;
+        width: 150px;
+        background-color: blueviolet;
+        margin: 8px;
+    }
+    .box2{
+        flex-shrink: 2;
+        order: 1
+    }
+
+    .box3{
+        flex-basis:  200px;
+    }
+    
+</style>
 <body>
     <div class="container">
-        <div class="circle"></div>
+        <div class="card box1">Box 1</div>
+        <div class="card box2">Box 2</div>
+        <div class="card box3">Box 3</div>
     </div>
 </body>
 </html>
