@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    height: 67.2px;
+    background-color: #3257a7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 64px;
+    padding-right: 64px;
+    color: white;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 800;
+}
+
+header div{
+    display: flex;
+    gap: 22px;
+}
+
+main{
+    
+}
