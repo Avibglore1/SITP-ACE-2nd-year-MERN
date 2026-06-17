@@ -3,48 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flexwrap</title>
+    <title>Practise</title>
     <style>
-        .container{
-            height: 620px;
-            width: 500px;
-            background-color: goldenrod;
-            display: flex;
-            flex-direction: row;
-            gap: 8px;
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-
-        .box{
-            height: 100px;
-            width: 100px;
-            background-color: antiquewhite;
+        .container{
+            background-color: aqua;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            font-size: 40px;
-            font-weight: 600;
+            height: 100vh;
+            gap: 8px;
         }
-
-        .box1{
-           order: 0;
-        }
-
-        .box2{
-            order: -1;
-        }
-
-        .box3{
-            order: 0
-        }
-        
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
+       <h1>heading</h1> 
+       <input type="date" name="" id="">
+       <button onclick="clickButton">Show</button>
+       <script src="app.js"></script>
     </div>
 </body>
 </html>

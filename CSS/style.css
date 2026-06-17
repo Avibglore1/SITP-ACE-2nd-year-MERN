@@ -1,0 +1,42 @@
+.container{
+            background-color: aquamarine;
+            height: 600px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: chocolate;
+        }
+
+
+        @media screen and (max-width: 800px){
+            .container{
+                display: flex;
+                justify-content: space-between;
+                background-color: black;
+            }
+        }
+
+
+        @media screen and (max-width: 600px){
+            .container{
+                display: flex;
+                flex-direction: column;
+                background-color: green;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .box{
+                height: 50px;
+                width: 50px;
+
+            }
+        }
+
+
+        /* container width: 300px */
