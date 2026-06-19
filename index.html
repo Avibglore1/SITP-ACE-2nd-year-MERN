@@ -3,30 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practise</title>
+    <title>transform/translate</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
         .container{
             background-color: aqua;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            gap: 8px;
+            height: 50vh;
+            position: relative;
+        }
+
+        .moved{
+            height: 150px;
+            width: 150px;
+            background-color: bisque;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            
         }
     </style>
 </head>
 <body>
     <div class="container">
-       <h1>heading</h1> 
-       <input type="date" name="" id="">
-       <button onclick="clickButton">Show</button>
-       <script src="app.js"></script>
+        <div class="moved"></div>
     </div>
+    
 </body>
 </html>
