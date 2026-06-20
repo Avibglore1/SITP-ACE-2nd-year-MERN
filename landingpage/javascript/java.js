@@ -1,13 +1,8 @@
-function calculate(){
-    const a  = 15;
+// Grade Calculator
 
-    const b = 20;
-
-    const sum = a + b;
-
-    return data
-    
-}
-
-
-console.log(calculate())
+// Marks:
+// 90–100 → A
+// 80–89 → B
+// 70–79 → C
+// 60–69 → D
+// Below 60 → F
