@@ -1,8 +1,14 @@
-// Grade Calculator
+// object is a collection of key,value pairs
 
-// Marks:
-// 90–100 → A
-// 80–89 → B
-// 70–79 → C
-// 60–69 → D
-// Below 60 → F
+const students = { 
+   name: "Avi",   
+   isMale: true,
+   age: 30
+};
+
+
+
+for(let obj in students){
+    console.log(students.obj);
+}
+

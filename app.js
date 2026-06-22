@@ -6,4 +6,4 @@ console.log("hello above answer should be 50");
 
 consle.log("let check this is printed or not");
 
-console.log("whether this will print")
+console.log("whether this will print");
