@@ -1,22 +1,8 @@
-// Question: Write a function calculate(a, b, operation) that accepts two numbers and a callback function.
-
-const x = 10;
-const y = 20;
-
-function add(l,m){
-  return l+m;
+function multiply(a, b, callback) {
+  const result = a * b;
+  callback(result);
 }
 
-function subtract(l,m){
-  return l-m;
-}
-
-function multiply(l,m){
-  return l*m
-}
-
-function calculate(a,b,func){
-console.log(func(a,b));
-}
-
-calculate(x,y,multiply)
+multiply(4, 5, function (answer) {
+  console.log(answer);
+});
