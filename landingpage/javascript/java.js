@@ -1,8 +1,19 @@
-function multiply(a, b, callback) {
-  const result = a * b;
-  callback(result);
-}
+const user = {
+  id: 1,
+  profile: {
+    firstName: "John",
+    lastName: "Doe"
+  }
+};
 
-multiply(4, 5, function (answer) {
-  console.log(answer);
-});
+
+const {profile:{firstName,lastName}} = user;
+
+// Extract firstName and lastName.
+
+// const {profile} = user;
+
+// const {firstName,lastName} = profile;
+
+console.log(firstName,lastName)
+
