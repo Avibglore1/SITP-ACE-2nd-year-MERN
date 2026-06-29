@@ -1,21 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM</title>
+    <title>Counter</title>
 </head>
-<body>
-    <button onclick="domManipulation()">Change background color</button>
+<body style="background-color: aquamarine; padding: 60px; width: 600px;border: 2px solid salmon; text-align: center;">
+    <div id="response" style="text-align: center; font-size: larger; font-weight: 600;">0</div>
+    <div style="display: flex; justify-content: space-evenly;align-items: center; margin-top: 40px;">
+        <button onclick="increment()">Increment</button>
+        <button onclick="reset()">Reset</button>
+        <button onclick="decrement()">Decrement</button>
+    </div>
     <script>
-        
-            function domManipulation(){
-                 const colors = ["black", "green", "orange", "yellow"];
-                 let length = colors.length;
-                let btnEl = document.querySelector("button");
-                let index = Math.floor(Math.random()*length);
-                btnEl.style.backgroundColor=colors[index]
+        function increment(){
+            const responseEl = document.getElementById("response");
+            responseEl.textContent = parseInt(responseEl.textContent) + 1
+        }
+
+        function reset(){
+             const responseEl = document.getElementById("response");
+            responseEl.textContent = 0
+        }
+
+        function decrement(){
+             const responseEl = document.getElementById("response");
+            responseEl.textContent = parseInt(responseEl.textContent) - 1
         }
     </script>
 </body>
