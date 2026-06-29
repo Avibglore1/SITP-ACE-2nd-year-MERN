@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <button onclick="domManipulation()">Change background color</button>
+    <script>
+        
+            function domManipulation(){
+                 const colors = ["black", "green", "orange", "yellow"];
+                 let length = colors.length;
+                let btnEl = document.querySelector("button");
+                let index = Math.floor(Math.random()*length);
+                btnEl.style.backgroundColor=colors[index]
+        }
+    </script>
+</body>
+</html>
