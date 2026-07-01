@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <style>
+        .answer{
+            display: none;
+        }
+
+        .answer.show{
+            display: block;
+        }
+        .question{
+            /* cursor: pointer; */
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <div class="faq">
+            <div class="question">
+                <span>➡️</span>
+                <h3>What is Javascript</h3>
+            </div>
+            <div class="answer">
+                JavaScript is a programming language.
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question">
+                <span>➡️</span>
+                <h3>What is DOM in JS</h3>
+            </div>
+            <div class="answer">
+                DOM is used to make page interactive
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question">
+                <span>➡️</span>
+                <h3>What is Event Delegation</h3>
+            </div>
+            <div class="answer">
+                A technique which uses event propagation
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question">
+                <span>➡️</span>
+                <h3>What is Async Javascript</h3>
+            </div>
+            <div class="answer">
+                A third-party call is Async Javascript
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
