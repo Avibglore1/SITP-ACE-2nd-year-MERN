@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+
+    <style>
+        .answer{
+            display: none;
+        }
+
+        .answer.show{
+            display: block;
+        }
+    </style>
+</head>
+<body style="background-color: bisque">
+    <div class="faq" style="display: flex; justify-content: center;align-items: center; flex-direction: column; gap: 10px;">
+        <div class="question">
+            <span>➡️</span>What is Javascript   
+        </div>
+        <div class="answer" style="font-weight: 600;">
+            JS is a single threaded interpreted language
+        </div>
+    </div>
+    <div class="faq" style="display: flex; justify-content: center;align-items: center; flex-direction: column; gap: 10px;">
+        <div class="question">
+            <span>➡️</span>What is DOM  
+        </div>
+        <div class="answer" style="font-weight: 600;">
+            DOM is used to manipulate JS
+        </div>
+    </div>
+    <div class="faq" style="display: flex; justify-content: center;align-items: center; flex-direction: column; gap: 10px;">
+        <div class="question">
+            <span>➡️</span>What is arrow function   
+        </div>
+        <div class="answer" style="font-weight: 600;">
+            arrow function are extension of function expression
+        </div>
+    </div>
+    <div class="faq" style="display: flex; justify-content: center;align-items: center; flex-direction: column; gap: 10px;">
+        <div class="question">
+            <span>➡️</span>What is Async Javascript   
+        </div>
+        <div class="answer" style="font-weight: 600;">
+            third-part interaction
+        </div>
+    </div>
+    <script>
+        let questionArr = document.querySelectorAll(".question");
+        
+
+        questionArr.forEach(function(question){
+            question.addEventListener("click", function(e){
+               
+                const parentEl = this.parentElement;
+              
+
+                const answerEl = parentEl.querySelector(".answer");
+             
+                answerEl.classList.toggle("show");
+            })
+        })
+    </script>
+</body>
+</html>
