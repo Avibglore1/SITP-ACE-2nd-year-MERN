@@ -1,14 +1,16 @@
-const p1 = new Promise((resolve,reject)=>{
-    if(true){
-        resolve({name: "Avi", gender: "M"})
-    }
-   reject(`Erroe 404: Page not found`)
-})
 
-p1
-.then((data)=>{
-    console.log(data)
-})
-.catch((error)=>{
-    console.log(error)
-})
+function fetchGradesPromise() {
+  return new Promise(resolve => {
+    setTimeout(() => resolve([85, 90, 78]), 2000);
+  });
+}
+
+async function fetchGradesAsync() {
+  let grades = await fetchGradesPromise();
+  console.log("Async/Await Grades:", grades);
+}
+
+// Usage
+
+fetchGradesPromise().then(grades => console.log("Promise Grades:", grades));
+fetchGradesAsync();

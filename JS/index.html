@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1 >Calculator</h1>
+    <h5>Input 1st:</h5>
+    <input type="number" id="num1">
+    <h5>Input 2nd:</h5>
+    <input type="number" id="num2">
+    <br></br>
+    <button class="add" >Add</button>
+    <button class="sub">Sub</button>
+    <button class="mul">Multiply</button>
+    <button class="divi">Divide</button>
+     <h2 id="result"></h2>
+    <script>
+        let button1 = document.querySelector(".add");
+        let button2 = document.querySelector(".sub");
+        let button3 = document.querySelector(".mul");
+        let button4 = document.querySelector(".divi");
+        let input1 = document.querySelector("#num1");
+        let input2 = document.querySelector("#num2");
+        let result = document.querySelector("#result");
+ 
+        button1.addEventListener("click", function () {
+        let num1 = Number(input1.value);
+        let num2 = Number(input2.value);
+ 
+        result.textContent = "Answer: " + (num1 + num2);
+        });
+ 
+        button2.addEventListener("click", function () {
+        let num1 = Number(input1.value);
+        let num2 = Number(input2.value);
+        result.textContent = "Answer: " + (num1 - num2);
+        });
+ 
+        button3.addEventListener("click", function () {
+        let num1 = Number(input1.value);
+        let num2 = Number(input2.value);
+        result.textContent = "Answer: " + (num1 * num2);
+        });
+ 
+        button4.addEventListener("click", function () {
+        let num1 = Number(input1.value);
+        let num2 = Number(input2.value);
+        result.textContent = "Answer: " + (num1/num2);
+        });
+ 
+       
+    </script>
+   
+</body>
+</html>
