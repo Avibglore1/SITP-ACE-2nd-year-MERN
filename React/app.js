@@ -1,30 +1,32 @@
 const root = ReactDOM.createRoot(document.getElementById("root"));
- 
-const bg = {backgroundColor: "yellow"};
-function Details(props){
-    return (
-        <>
-            <h1 style={bg}>My name is {props.name} </h1>
-            <h2>My age : {props.age + 25}</h2>
-        </>
-    
-    ) 
-    
+
+
+function Header(){
+    return <header>This is official website page of fifa</header>
 }
 
+function Main(props){
+    return <main> i will have all the details of matches {props.match}</main>
+}
 
-// 45 + "45" = 4545
+function Footer(){
+    return <footer>Thanks for visiting us</footer>
+}
 
-// name:
-// college:
-// course:
-// 
+function App(){
+    return (
+        <>
+        <Header/>
+        <Main match = "USA vs Russia"/>
+        <Footer/>
+        </>
+    )
+}
+
+root.render(<App/>)
 
 
-
-
-root.render(<Details name={"Avinash"} age={45}/>)
-
+// everything is a component
 
 
 
