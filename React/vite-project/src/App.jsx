@@ -1,33 +1,33 @@
-import { useEffect, useState } from 'react'
+import { useState } from "react"
+import React from "react";
 
-import './App.css'
-
-function App() {
-  const [user,setUser] = useState([]);
-  
-  console.log("outside useEfect");
-    useEffect(()=>{
-      async function fetchData() {
-        const resp = await fetch("https://api.github.com/users");
-        const data = await resp.json();
-        setUser(data);
-        console.log("inside useEfect");
-      }
-      fetchData()
+const Sum = React.memo(()=>{
+   let sum = 0
+    for(let i=0;i<1000;i++){
+      sum += i
     }
-    
-    ,[])
-    
+    console.log("Sum rendered")
+    return(
+      <>
+        <p>Sum is {sum}</p>
+      </>
+    )
+}) 
+ 
 
-  return (
-    <>
-    {
-      user.map(u=>(
-        <img src={u.avatar_url} key={u.id} alt="" />
-      ))
-    }
-      
-    </>
+
+
+function App(){
+  const [count,setCount] = useState(0);
+
+  console.log("App rendered")
+  return(
+    <div className="main">
+      <h1>Heading</h1>
+      <h2>Counter : {count}</h2>
+      <button onClick={()=>setCount(count+1)}>Increment</button>
+      <Sum/>
+    </div>
   )
 }
 
