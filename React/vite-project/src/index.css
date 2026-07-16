@@ -1,16 +1,15 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 .main{
   background-color: black;
   color: azure;
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+  
   flex-direction: column;
-  gap: 15px
+  height: 100vh;
+}
+
+input{
+  margin: 8px;
 }

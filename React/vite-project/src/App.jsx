@@ -1,34 +1,20 @@
 import { useState } from "react"
-import React from "react";
-
-const Sum = React.memo(()=>{
-   let sum = 0
-    for(let i=0;i<1000;i++){
-      sum += i
-    }
-    console.log("Sum rendered")
-    return(
-      <>
-        <p>Sum is {sum}</p>
-      </>
-    )
-}) 
- 
-
-
+import Footer from "./component/Footer"
+import Header from "./component/Header"
+import Main from "./component/Main"
+import { context } from "../createContext"
 
 function App(){
-  const [count,setCount] = useState(0);
-
-  console.log("App rendered")
-  return(
-    <div className="main">
-      <h1>Heading</h1>
-      <h2>Counter : {count}</h2>
-      <button onClick={()=>setCount(count+1)}>Increment</button>
-      <Sum/>
-    </div>
-  )
+  const [count,setCount] = useState(0)
+return(
+  <context.Provider value={count}>
+    <h1>Counter : {count}</h1>
+    <button onClick={()=>{setCount(count+1)}}>Increment</button>
+    <Header/>
+    <Main />
+    <Footer />
+  </context.Provider>
+)
 }
 
 export default App
