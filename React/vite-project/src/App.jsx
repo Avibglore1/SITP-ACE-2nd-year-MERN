@@ -1,20 +1,25 @@
 import { useState } from "react"
-import Footer from "./component/Footer"
-import Header from "./component/Header"
-import Main from "./component/Main"
-import { context } from "../createContext"
-
+import "./App.css"
 function App(){
-  const [count,setCount] = useState(0)
-return(
-  <context.Provider value={count}>
-    <h1>Counter : {count}</h1>
-    <button onClick={()=>{setCount(count+1)}}>Increment</button>
-    <Header/>
-    <Main />
-    <Footer />
-  </context.Provider>
-)
+  const [num,setNum] = useState("");
+  const [text,setText] = useState("");
+
+  
+    function checkNumber(){
+    if(num%2==0) setText("Even")
+    else setText("Odd")
+    setNum("")
+  }
+
+  
+  
+  return (
+    <div>
+      <input type="text" value={num} onChange={(e)=>Number(setNum(e.target.value))} /> 
+      <p>{text}</p>
+      <button onClick={checkNumber}>Check Number</button>
+    </div>
+  )
 }
 
 export default App
