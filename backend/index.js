@@ -1,8 +1,33 @@
-import path from "path";
+import express from "express";
 
-const data = path.join("components", "main", "data.txt");
-// joing file path: relative path
+const app = express();
 
-const resolvedData = path.resolve("components");
-// absolute
-console.log(resolvedData)
+const userAdd = (req,res,next) =>{
+    req.user = {
+        id: 1,
+        role: "admin"
+    }
+    next()
+}
+
+const isStudent = (req,res,next) =>{
+    if(req.user.role==="student") next()
+    return res.json({message: "Unauthorized"})
+}
+
+const isAdmin = (req,res,next) =>{
+    if(req.user.role==="admin") next();
+    return res.json({message: "Unauthorized person"})
+}
+
+app.use("/student", userAdd, isStudent, (req,res)=>{
+    res.json({message: "student portal accessed"})
+})
+
+app.use("/admin", userAdd, isAdmin, (req,res)=>{
+    res.json({status: "success", message: "Admin portal accessible"})
+})
+
+app.listen(3000, ()=>{
+    console.log("Server is running at port 3000");
+})
