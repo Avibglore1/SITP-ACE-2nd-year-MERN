@@ -5,11 +5,12 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    email: {
+    email:{
         type: String,
+        unique: true,
         required: true
     },
-    age: String
+    password: String
 })
 
 const User = mongoose.model("User", userSchema);
