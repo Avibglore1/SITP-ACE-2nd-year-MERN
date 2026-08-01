@@ -1,33 +1,31 @@
-import { useEffect, useState } from 'react'
-import axios from "axios";
+import { useState, useEffect } from 'react';
 import './App.css'
+import axios from "axios";
 
 function App() {
-
   const [todo,setTodo] = useState("");
   const [tasks,setTasks] = useState([]);
 
   useEffect(()=>{
-    const getTodoList = async() =>{
-      const todosList = await axios("http://localhost:3000/todo");
-      setTasks(todosList.data.todoList)
+    // get method backend, details wo mujhhe:
+    const getFetchTodos = async()=>{
+      const result = await axios.get("http://localhost:3000/todo");
+      setTasks(result.data.todoList);
     };
-    getTodoList()
-  },[])
+    getFetchTodos()
+  }
+  
+  ,[])
 
   const addTask = async() =>{
-    if(todo.length!==0){
-      const data = await axios.post("http://localhost:3000/todo",{
-       todo
-      }     
-    )
-       setTasks([...tasks, data.data.task]);
+    if(todo.trim().length==0) return
+      const result = await axios.post("http://localhost:3000/todo",{todo});
+       setTasks([...tasks,result.data.task]);
        setTodo("");
-    }
   }
 
   const onDelete = async(id) =>{
-    const res = await axios.delete(`http://localhost:3000/todo/${id}`)   
+    const res = await axios.delete(`http://localhost:3000/todo/${id}`);
     setTasks(res.data.finalList);
   }
 
